@@ -1,0 +1,1 @@
+BFS or breadth first search is a search algorithm which starts search of all the nodes in the same depth and when depth increases it again searched along those nodes.

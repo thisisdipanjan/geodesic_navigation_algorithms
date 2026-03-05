@@ -1,0 +1,1 @@
+Bidirectional search algorithm starts graph search from the start and end of the message container and then it reaches the middle to find the solution.

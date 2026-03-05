@@ -1,0 +1,1 @@
+DFS or Depth first search is a search algorithm which it searches all the branches of a node till the last node depth and then comes to the parent node and then it again searches till the end depth of that node.
