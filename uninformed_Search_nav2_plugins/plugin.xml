@@ -1,0 +1,19 @@
+<library path="uninformed_planners_lib">
+
+  <class name="uninformed_planners/BFSPlanner"
+         type="uninformed_planners::BFSPlanner"
+         base_class_type="nav2_core::GlobalPlanner"/>
+
+  <class name="uninformed_planners/DFSPlanner"
+         type="uninformed_planners::DFSPlanner"
+         base_class_type="nav2_core::GlobalPlanner"/>
+
+  <class name="uninformed_planners/IterativeDeepeningPlanner"
+         type="uninformed_planners::IterativeDeepeningPlanner"
+         base_class_type="nav2_core::GlobalPlanner"/>
+
+  <class name="uninformed_planners/UniformCostPlanner"
+         type="uninformed_planners::UniformCostPlanner"
+         base_class_type="nav2_core::GlobalPlanner"/>
+
+</library>
