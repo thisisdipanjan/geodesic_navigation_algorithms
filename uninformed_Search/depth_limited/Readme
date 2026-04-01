@@ -1,1 +1,0 @@
-Depth Limited is basically DFS but with a limit to the depth of the branch in a tree, so the loop doesn't go on for ever.

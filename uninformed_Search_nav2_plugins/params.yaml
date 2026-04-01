@@ -1,6 +1,6 @@
 planner_server:
   ros__parameters:
-    planner_plugins: ["BFS", "DFS", "IDS", "UCS"]
+    planner_plugins: ["BFS", "DFS", "IDS", "UCS", "DIJKSTRA"]
 
     BFS:
       plugin: "uninformed/BFS"
@@ -13,3 +13,6 @@ planner_server:
 
     UCS:
       plugin: "uninformed/UCS"
+
+    DIJKSTRA:
+      plugin: "informed/Dijkstra"

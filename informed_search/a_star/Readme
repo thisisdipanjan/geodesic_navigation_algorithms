@@ -1,2 +1,0 @@
-A star search method is a graph search method and it uses heuristics + cost to visit nodes and finally generate the path.
-It uses priority queue to search through nodes and keeps a track of visited nodes and then finally generate the path.

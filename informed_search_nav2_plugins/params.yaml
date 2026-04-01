@@ -1,0 +1,18 @@
+planner_server:
+  ros__parameters:
+    planner_plugins: ["AStar", "Greedy", "Beam", "HybridAStar", "IDAStar"]
+
+    AStar:
+      plugin: "informed/AStar"
+
+    Greedy:
+      plugin: "informed/Greedy"
+
+    Beam:
+      plugin: "informed/Beam"
+
+    HybridAStar:
+      plugin: "informed/HybridAStar"
+
+    IDAStar:
+      plugin: "informed/IDAStar"

@@ -1,0 +1,23 @@
+<library path="informed_search_lib">
+
+  <class name="informed/AStar"
+         type="informed_search_nav2_plugins::AStarSearch"
+         base_class_type="nav2_core::GlobalPlanner"/>
+
+  <class name="informed/Greedy"
+         type="informed_search_nav2_plugins::GreedyBestSearch"
+         base_class_type="nav2_core::GlobalPlanner"/>
+
+  <class name="informed/Beam"
+         type="informed_search_nav2_plugins::BeamSearch"
+         base_class_type="nav2_core::GlobalPlanner"/>
+
+  <class name="informed/HybridAStar"
+         type="informed_search_nav2_plugins::HybridAStarSearch"
+         base_class_type="nav2_core::GlobalPlanner"/>
+
+  <class name="informed/IDAStar"
+         type="informed_search_nav2_plugins::IterativeDeepeningAStarSearch"
+         base_class_type="nav2_core::GlobalPlanner"/>
+
+</library>

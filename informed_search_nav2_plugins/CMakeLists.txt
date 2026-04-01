@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(uninformed_Search_nav2_plugins)
+project(informed_search_nav2_plugins)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -23,15 +23,15 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-add_library(uninformed_search_lib SHARED
-  src/breadth_first_search.cpp
-  src/depth_first_search.cpp
-  src/dijkstra_search.cpp
-  src/iterative_deepening_search.cpp
-  src/uniform_cost_search.cpp
+add_library(informed_search_lib SHARED
+  src/a_star_search.cpp
+  src/beam_search.cpp
+  src/greedy_best_search.cpp
+  src/hybrid_a_star_search.cpp
+  src/iterative_deepening_a_star_search.cpp
 )
 
-ament_target_dependencies(uninformed_search_lib
+ament_target_dependencies(informed_search_lib
   rclcpp
   nav2_core
   nav_msgs
@@ -42,7 +42,7 @@ ament_target_dependencies(uninformed_search_lib
 
 pluginlib_export_plugin_description_file(nav2_core plugin.xml)
 
-install(TARGETS uninformed_search_lib
+install(TARGETS informed_search_lib
   LIBRARY DESTINATION lib)
 
 install(DIRECTORY include/

@@ -1,1 +1,0 @@
-Iterative deepening search is a DFS algorithm but it searches all the branches in a depth and then starts the algorithm again from the next depth till it finds the goal.
