@@ -56,27 +56,6 @@ All planners implement the `nav2_core::GlobalPlanner` interface and are:
 
 ---
 
-## Repository Structure
-
-```id="kfdv1c"
-search_nav2_plugins/
-├── uninformed_search_nav2_plugins/
-│   ├── include/
-│   ├── src/
-│   ├── plugin.xml
-│   ├── params.yaml
-│   ├── CMakeLists.txt
-│   └── package.xml
-│
-├── informed_search_nav2_plugins/
-│   ├── include/
-│   ├── src/
-│   ├── plugin.xml
-│   ├── params.yaml
-│   ├── CMakeLists.txt
-│   └── package.xml
-```
-
 Each package builds a **shared plugin library** containing multiple planner implementations.
 
 ---
@@ -164,6 +143,3 @@ You can test using:
 * Integration with dynamic obstacles
 * GPU-accelerated planning
 
----
-
-MIT / Apache 2.0
